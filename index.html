@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Space Shooter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="game">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+      <div>SKOR <span id="score">0</span></div>
+      <div>NYAWA <span id="lives">3</span></div>
+    </div>
+
+    <div id="startScreen" class="screen">
+      <h1>SPACE SHOOTER</h1>
+      <p>Geser jarimu untuk menggerakkan pesawat.</p>
+      <p>Tahan layar untuk menembak!</p>
+      <button id="startBtn">MULAI GAME</button>
+    </div>
+
+    <div id="gameOverScreen" class="screen hidden">
+      <h1>GAME OVER</h1>
+      <p>Skor akhir: <span id="finalScore">0</span></p>
+      <button id="restartBtn">MAIN LAGI</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
